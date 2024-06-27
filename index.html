@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/CSS/Login.css">
+    <style>
+        .login-dropdown {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .login-dropdown-content {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            min-width: 300px;
+            height: 100vh;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted poster="/assets/Untitled design.mp4"
+        style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
+        <source src="/assets/Untitled design.mp4" type="video/mp4">
+    </video>
+    <div class="login-dropdown">
+        <button onclick="showLogin()">Login</button>
+        <div class="login-dropdown-content">
+
+            <div class="login-container">
+                <button onclick="hideLogin()"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                        viewBox="0 -960 960 960" width="20px" fill="#fff">
+                        <path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z" />
+                    </svg></button>
+                <h2>Login</h2>
+                <form >
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button ><a href="HTML/home.html" style="color: #fff;">Login</a></button>
+                </form>
+                <p>Belum memiliki akun? <a href="SignUp.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+
+        function showLogin() {
+            const login = document.querySelector('.login-dropdown-content')
+            login.style.display = 'block'
+        }
+        function hideLogin() {
+            const login = document.querySelector('.login-dropdown-content')
+            login.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>

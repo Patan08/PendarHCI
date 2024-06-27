@@ -1,0 +1,93 @@
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.art-item {
+  background-color: #f4f4f4;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.art-item img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.art-details {
+  padding: 10px;
+}
+
+.art-details h3 {
+  margin: 10px 0;
+}
+
+.art-details p {
+  color: #888;
+}
+
+.bid-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bid-button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.top-lists {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px 0;
+}
+
+.top-lists div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.top-lists h4 {
+  margin-bottom: 10px;
+}
+
+.about-us {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}

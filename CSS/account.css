@@ -1,0 +1,100 @@
+
+
+.profile-header {
+    margin-top: 15px;
+    background-color: #585858;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.follow-btn, .donate-btn, .logout-btn {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    background-color: #fdcb6e;
+}
+
+.logout-btn {
+    background-color: rgb(233, 102, 102);
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #585858;
+}
+
+.image-card1 {
+    position: relative;
+    margin: 0 10px;
+}
+
+.image-card2 {
+    position: relative;
+    margin: 0 10px;
+}
+
+.image-card1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-card2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
